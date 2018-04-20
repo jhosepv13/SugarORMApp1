@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SugarORMApp</string>
+    <string name="register_fullname">register_fullname</string>
+    <string name="register_email">register_email</string>
+    <string name="register_password">register_password</string>
+    <string name="register_save">register_save</string>
+
+</resources>
