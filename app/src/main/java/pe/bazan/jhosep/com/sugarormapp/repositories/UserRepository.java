@@ -2,6 +2,7 @@ package pe.bazan.jhosep.com.sugarormapp.repositories;
 
 import com.orm.SugarRecord;
 
+import java.util.Iterator;
 import java.util.List;
 
 import pe.bazan.jhosep.com.sugarormapp.models.User;
@@ -12,8 +13,12 @@ import pe.bazan.jhosep.com.sugarormapp.models.User;
 
 public class UserRepository {
 
+    private static List<User> users;
+
+
+
     public static List<User> list(){
-        List<User> users = SugarRecord.listAll(User.class);
+        users = SugarRecord.listAll(User.class);
         return users;
     }
 
@@ -40,6 +45,16 @@ public class UserRepository {
         SugarRecord.delete(user);
     }
 
+    public static User Login(String user, String pass){
+        List<User> user1 = list();
+        for (User login1: user1 ){
+            if (login1.getFullname().equals(user) && login1.getPassword().equals(pass)) {
+
+                return login1;
+            }
+        }
+        return null;
+    }
 }
 
 
