@@ -45,10 +45,10 @@ public class UserRepository {
         SugarRecord.delete(user);
     }
 
-    public static User Login(String user, String pass){
+    public static User Login(String email, String pass){
         List<User> user1 = list();
         for (User login1: user1 ){
-            if (login1.getFullname().equals(user) && login1.getPassword().equals(pass)) {
+            if (login1.getEmail().equals(email) && login1.getPassword().equals(pass)) {
 
                 return login1;
             }

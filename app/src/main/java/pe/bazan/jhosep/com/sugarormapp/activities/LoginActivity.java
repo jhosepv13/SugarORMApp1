@@ -14,7 +14,7 @@ import pe.bazan.jhosep.com.sugarormapp.repositories.UserRepository;
 public class LoginActivity extends AppCompatActivity {
 
     private static final int REGISTER_FORM_REQUEST = 100;
-    private EditText username;
+    private EditText user_email;
     private EditText password;
 
     @Override
@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        username = findViewById(R.id.username_input);
+        user_email = findViewById(R.id.username_input);
         password = findViewById(R.id.password_input);
 
     }
@@ -38,15 +38,15 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void callLogin(View view) {
-        String user = username.getText().toString();
+        String email = user_email.getText().toString();
         String pass = password.getText().toString();
 
-        User userv = UserRepository.Login(user, pass);
+        User userv = UserRepository.Login(email, pass);
 
-        if(user.isEmpty() && pass.isEmpty()){
-            Toast.makeText(this, "Campos vacios", Toast.LENGTH_SHORT).show();
+        if(email.isEmpty() && pass.isEmpty()){
+            Toast.makeText(this, "Los campos estan vacios", Toast.LENGTH_SHORT).show();
         } else if(userv == null){
-            Toast.makeText(this,"Invalido", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Usuario o contraseña invalido", Toast.LENGTH_SHORT).show();
         } else{
             Intent intent = new Intent(this, ContentActivity.class);
 
