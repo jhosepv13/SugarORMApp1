@@ -23,11 +23,11 @@
         android:padding="32dp">
 
         <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="72dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:src="@mipmap/ic_launcher" />
+            android:src="@mipmap/logo" />
 
         <LinearLayout
             android:layout_width="match_parent"

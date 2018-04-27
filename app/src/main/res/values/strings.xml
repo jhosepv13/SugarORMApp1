@@ -3,6 +3,15 @@
     <string name="register_fullname">Nombre Completo</string>
     <string name="register_email">Email</string>
     <string name="register_password">Contraseña</string>
-    <string name="register_save">Registrar</string>
+    <string name="register_save">Registrarse</string>
+
+    <string name="action_registrar">Registrar producto</string>
+    <string name="action_ver">Ver producto</string>
+
+
+    <string name="register_nameproducto">Nombre del Producto</string>
+    <string name="register_marcaproducto">Marca del Producto</string>
+    <string name="register_description">Descripción</string>
+    <string name="register_guardar">Registrar Producto</string>
 
 </resources>

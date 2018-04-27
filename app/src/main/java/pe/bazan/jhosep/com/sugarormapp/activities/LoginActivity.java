@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if(userv == null){
             Toast.makeText(this,"Usuario o contraseña invalido", Toast.LENGTH_SHORT).show();
         } else{
-            Intent intent = new Intent(this, ContentActivity.class);
+            Intent intent = new Intent(this, PageActivity.class);
 
             startActivity(intent);
         }

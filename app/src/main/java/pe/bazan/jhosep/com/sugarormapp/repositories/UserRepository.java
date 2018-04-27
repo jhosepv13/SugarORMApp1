@@ -7,9 +7,6 @@ import java.util.List;
 
 import pe.bazan.jhosep.com.sugarormapp.models.User;
 
-/**
- * Created by Alumno on 19/04/2018.
- */
 
 public class UserRepository {
 

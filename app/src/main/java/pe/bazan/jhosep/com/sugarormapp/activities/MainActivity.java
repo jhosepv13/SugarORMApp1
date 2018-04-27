@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private static final int REGISTER_FORM_REQUEST = 100;
+    //private static final int REGISTER_FORM_REQUEST = 100;
 
     private RecyclerView usersList;
 
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void callRegisterForm(View view){
+    /*public void callRegisterForm(View view){
         startActivityForResult(new Intent(this, RegisterActivity.class), REGISTER_FORM_REQUEST);
-    }
+    }*/
 
     // return from RegisterActivity
     @Override

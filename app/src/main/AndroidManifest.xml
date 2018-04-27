@@ -24,11 +24,14 @@
             android:value="pe.bazan.jhosep.com.sugarormapp.models" />
 
         <activity android:name=".activities.MainActivity">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.LoginActivity">
@@ -39,12 +42,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.ContentActivity">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
+        <activity android:name=".activities.RegisterProductActivity" />
+        <activity android:name=".activities.PageActivity"></activity>
     </application>
 
 </manifest>
