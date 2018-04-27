@@ -23,16 +23,7 @@
             android:name="DOMAIN_PACKAGE_NAME"
             android:value="pe.bazan.jhosep.com.sugarormapp.models" />
 
-        <activity android:name=".activities.MainActivity">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
+        <activity android:name=".activities.MainActivity"/>
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.LoginActivity">
             <intent-filter>
@@ -41,18 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ContentActivity">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
-        </activity>
+        <activity android:name=".activities.ContentActivity"/>
         <activity android:name=".activities.RegisterProductActivity" />
-        <activity android:name=".activities.PageActivity"></activity>
+        <activity android:name=".activities.PageActivity"/>
     </application>
 
 </manifest>

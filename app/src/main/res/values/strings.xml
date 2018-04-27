@@ -5,9 +5,9 @@
     <string name="register_password">Contraseña</string>
     <string name="register_save">Registrarse</string>
 
-    <string name="action_registrar">Registrar producto</string>
-    <string name="action_ver">Ver producto</string>
-
+    <string name="action_registrar">Registrar productos</string>
+    <string name="action_ver">Ver productos</string>
+    <string name="action_fav">Ver favoritos</string>
 
     <string name="register_nameproducto">Nombre del Producto</string>
     <string name="register_marcaproducto">Marca del Producto</string>

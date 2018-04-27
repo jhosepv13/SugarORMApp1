@@ -29,7 +29,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void VerRegistros(View view) {
         Intent intent = new Intent(this, MainActivity.class);
-
         startActivity(intent);
     }
 
@@ -38,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void callLogin(View view) {
+
         String email = user_email.getText().toString();
         String pass = password.getText().toString();
 
@@ -48,8 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if(userv == null){
             Toast.makeText(this,"Usuario o contraseña invalido", Toast.LENGTH_SHORT).show();
         } else{
-            Intent intent = new Intent(this, PageActivity.class);
-
+            Intent intent = new Intent(getApplicationContext(), ContentActivity.class);
             startActivity(intent);
         }
 

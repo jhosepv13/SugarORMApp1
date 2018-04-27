@@ -30,11 +30,12 @@ public class PageActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-            case R.id.action_register:
-                startActivityForResult(new Intent(this, RegisterProductActivity.class), REGISTER_FORM_REQUEST);
-            case R.id.action_list:
-                Intent intent = new Intent(this, ContentActivity.class);
+            case R.id.action_new:
+                Intent intent = new Intent(this, RegisterProductActivity.class);
                 startActivity(intent);
+            case R.id.action_list:
+                Intent intent1 = new Intent(this, ContentActivity.class);
+                startActivity(intent1);
         }
         return super.onOptionsItemSelected(item);
     }
