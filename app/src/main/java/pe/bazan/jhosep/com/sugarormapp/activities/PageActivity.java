@@ -11,6 +11,8 @@ import pe.bazan.jhosep.com.sugarormapp.R;
 
 public class PageActivity extends AppCompatActivity {
 
+    private static final int REGISTER_FORM_REQUEST = 100;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +31,9 @@ public class PageActivity extends AppCompatActivity {
 
         switch (id) {
             case R.id.action_register:
-                Intent intent = new Intent(this, RegisterProductActivity.class);
+                startActivityForResult(new Intent(this, RegisterProductActivity.class), REGISTER_FORM_REQUEST);
+            case R.id.action_list:
+                Intent intent = new Intent(this, ContentActivity.class);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
